@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ToDo-List</title>
+        <link rel=stylesheet href="styles.css" />
+         
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="logo.jpg" alt="logo"/>
+                <h1>Welcome to ToDo-List</h1>
+            </header>
+            <section>
+                <div class="create">
+                    <input type="text" id="taskname" value="" placeholder="Add your task"/>
+                    <button onclick="addTask()">add item</button>
+                </div>
+                <div class="tasks-list">
+                    <h2>Your Pending List</h2>
+                    <ul id="tasks">
+                        
+                    </ul>
+                </div>
+                <div class="tasks-completed">
+                    <h2>Completed list</h2>
+                    <ul id="completed">
+                        
+                    </ul>
+                </div>
+            </section>           
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
