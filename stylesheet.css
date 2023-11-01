@@ -51,12 +51,15 @@ section{
 h2{
     background-color:rgb(153, 144, 129);;
     padding: 1%;
+    
+}
+.tasks-completed ul{
+    text-decoration:line-through;
 }
 .tasks-completed{
     float: left;
     padding: 1%;
     width: 48%;
-    text-decoration:line-through;
 }
 input{
     padding: 1%;
@@ -64,13 +67,29 @@ input{
     border-bottom: 2px solid rgb(8, 8, 8);
 }
 button{
+    margin: auto;
     padding: 1%;
     float: right;
     width: 15%;
+    border-style: none;
+    background-color: none;
+    
+    
 }
+button:disabled,
+button[disabled]{
+  display:none;
+}
+
 ul{
     list-style-type: none;
     padding-left: 10px;
     text-align: left;
     font-size:x-large;
+    
+}
+li{
+    border-bottom: 2px solid rgb(8, 8, 8);
+    padding: 1%;
+    text-decoration-line: solid;
 }
